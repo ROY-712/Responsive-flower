@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+/* NOto-Serif FOn */
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+/* .inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+.dark{
+    color: rgb(97, 97, 97);
+ }
+.dark2{
+    color: rgb(94, 92, 92);
+}
+
+/* Navbar */
+
+.nav{
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    margin: 20px auto 90px;
+}
+.nav ul li{
+     list-style: none;
+}
+.nav-right ul{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.cart-image{
+      height: 30px;
+      width: a;
+}
+/* Banner */
+.banner{
+    max-width: 1140px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* background-color: #f1f7f9; */
+    /* border: 2px solid gray; */
+    margin: 50px auto 90px;
+}
+.banner, .banner-img{
+    background-color: #f1f7f9;
+}
+.description{  
+    /* align-items:end;  */
+    max-width: 570px;
+    height: auto;
+    /* border: 2px solid black;  */
+    padding-left: 5px;
+}
+.d1{
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.bann-des-col{
+    color: #E95A08;
+}
+.banner-img{
+    height: 355px;
+    width: 570px;
+}
+/* Our plants */
+
+.plant{
+    margin: 50px auto 130px;
+    /* align-items: center; */
+    height: auto;
+    max-width: 1140px;
+    /* border: 2px solid black;  */
+}
+
+.plant-des{
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+}
+.btn-col {
+  background-color: orangered;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 10px 90px;
+  border: none;
+  /* border-radius: 5px; */
+  margin: auto;
+}
+.btn-col:hover {
+    background-color: #cdeb4a;
+  }
+.image-text{
+    text-align: center;
+}
+.plant-image{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+}
+.plant-image img{
+    width: 100%;
+}
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .nav-right ul li {
+        display: none;
+    }
+    .banner{
+       flex-direction: column-reverse; 
+       gap: 20px;
+       padding: 0px;
+    }
+}
