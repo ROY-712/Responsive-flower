@@ -15,12 +15,7 @@
   font-variation-settings:
     "width" 100;
 }
-/* .inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
+/* color */
 .dark{
     color: rgb(97, 97, 97);
  }
@@ -36,7 +31,6 @@
     align-items: center;
     max-width: 1140px;
     justify-content: space-between;
-    /* border: 2px solid black; */
     margin: 20px auto 90px;
 }
 .nav ul li{
@@ -59,25 +53,23 @@
       height: 30px;
       width: auto;
 }
+
 /* Banner */
+
 .banner{
     max-width: 1140px;
     height: auto;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    /* background-color: #f1f7f9; */
-    /* border: 2px solid gray; */
     margin: 50px auto 90px;
 }
 .banner, .banner-img{
     background-color: #f1f7f9;
 }
 .description{  
-    /* align-items:end;  */
     max-width: 570px;
     height: auto;
-    /* border: 2px solid black;  */
     padding-left: 5px;
 }
 .d1{
@@ -96,14 +88,10 @@
 
 .plant{
     margin: 50px auto 130px;
-    /* align-items: center; */
     height: auto;
     max-width: 1140px;
-    /* border: 2px solid black;  */
 }
-
 .plant-des{
-    /* align-items: center; */
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
@@ -114,7 +102,6 @@
   color: #FFFFFF;
   padding: 10px 90px;
   border: none;
-  /* border-radius: 5px; */
   margin: auto;
 }
 .btn-col:hover {
@@ -174,14 +161,13 @@
 .deal {
   max-width: 1140px;
   margin: 100px auto;
-  padding: 0 20px;
+  padding-top:  0px 20px;
   font-family: sans-serif;
 }
 
-/* Header text center */
 .deal-des {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .deal-des h3 {
@@ -220,8 +206,6 @@
   color:  white;
   height: 250px;
 }
-
-/* Background images */
 .bloom {    
   background-image: url('../image/deal-bloom.png'); 
 }
@@ -256,40 +240,14 @@
   background: #e3e3e0;
 } 
 
-/* Join */
-
-/* .join{
-    background-image: url('../image/news-letter-bg.png');
-    background-size: cover;
-    background-position: center;
-    margin: 100px auto 110px;
-    max-width: 100%;
-    height: 550px;;
-    gap: 20px;
-    /* border: 2px solid black; */
-     
-} */
-.subscribe-to-join{ 
-    /* background: rgba(82, 77, 77, 0.4);  */
+.subscribe-to-join{   
     text-align: center;
     justify-content: center;
     align-items: center;
     height: 140px;
-    width: 830px;
-    /* background: transparent; */
+    width: 830px;   
 }  
-/* .subscribe-to-join h3{
-    text-align: center;
-    justify-content: center;
-} */
 
- /* .email{
-  font-weight: bold;
-  color: #b6b2b2;
-  padding: 8px 160px;
-  margin: 0;
- } */
-/*  */
 .subscribe-section {
   background-image: url('../image/news-letter-bg.png');
   background-size: cover;
@@ -337,12 +295,55 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  /* transition: background 0.3s; */
 }
 .email-box button:hover {
   background-color: #dbe549;
 }
+
+/* footer */
+
+.ending-page{
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 40px;
+}
+.Feature ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+.Feature ul li a{
+    text-decoration: none;
+    color:rgb(94, 92, 92) ;
+}
+.Feature ul li{
+    list-style-type: none;
+}
+.final p{
+    max-width: 370px;
+    padding-top: 8px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
+.icons img{
+    width: 30px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+.icons img:hover{
+    transform: scale(1.5);
+    transition: 0.5s all ease;
+}
+
 /* Responsive */
+
 @media screen and (max-width: 576px) {
     .nav-right ul li {
         display: none;
@@ -367,29 +368,30 @@
         gap: 20px;
         padding: 20px;
     }
-  
     .deal-discount{
          grid-template-columns: 1fr;
     }
     .left-column{
        grid-template-rows: auto;
     }
-
-       .bloom,
-        .ana,
-        .zabo{
+    .bloom,
+    .ana,
+    .zabo{
         width: 100%;
         height:250px;      
     }
-      .email-box {
-    flex-direction: column;
-  }
+    .email-box {
+       flex-direction: column;
+    }
 
-  .email-box input,
-  .email-box button {
-    width: 100%;
-    padding: 14px;
-  }
-
+    .email-box input,
+    .email-box button {
+        width: 100%;
+        padding: 14px;
+    }
+    .ending-page{
+        flex-direction: column;
+        gap:10px;
+      }
 
 }
