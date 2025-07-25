@@ -26,6 +26,7 @@
  }
 .dark2{
     color: rgb(94, 92, 92);
+    font-size: 20px;
 }
 
 /* Navbar */
@@ -56,7 +57,7 @@
 }
 .cart-image{
       height: 30px;
-      width: a;
+      width: auto;
 }
 /* Banner */
 .banner{
@@ -80,8 +81,8 @@
     padding-left: 5px;
 }
 .d1{
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 900;
     padding-bottom: 20px;
 }
 .bann-des-col{
@@ -105,6 +106,7 @@
     /* align-items: center; */
     justify-content: center;
     text-align: center;
+    padding-bottom: 10px;
 }
 .btn-col {
   background-color: orangered;
@@ -124,11 +126,184 @@
 .plant-image{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap:5px;
+    gap:10px;
 }
 .plant-image img{
     width: 100%;
 }
+
+/* Plant */
+
+.challenge{
+    display: flex;
+    margin: 100px auto 110px;
+    max-width: 1140px;
+    height:auto;
+    gap: 120px;
+    justify-content: space-between;
+    align-items: center; 
+    /* border: 2px solid black; */
+}
+.ch-des h3{
+    font-size: 32px;
+    font-weight: 700;        
+}
+.ch-img{
+    width: 130%;
+    height: auto;
+    /* border: 2px solid black; */
+    position: relative;
+}
+.ch-img1{
+    width: 100%;
+    height: auto;
+}
+.ch-img2{
+    width: 280px;
+    position: absolute;
+    top: -100px;
+    left: 70% ; 
+    z-index: 10;
+}
+.ch-des ul li{
+    padding: 10px;
+}
+
+/* Deals */
+/* .deal{
+    margin: 100px auto 110px;
+    max-width: 1140px;
+    height:auto;
+    gap: 20px;
+     justify-content: space-between;
+    align-items: center; 
+}
+.deal-des{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.deal-discount{
+    max-width: 1140px;
+    margin: 100px auto 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px); 
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.bloom{
+  background-image: url(../image/deal-bloom.png);
+   background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 250px;
+}
+.ana{
+  background-image: url(../image/deal-ana.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+height: 250px;
+}
+.zabo{
+    width: 300px;;
+    background-size: cover;
+  background-repeat: no-repeat;
+    height: 500px;
+  background-image: url(../image/deal-zabo.png);
+}
+#zabo-plant{
+    text-align: center;
+} */ 
+/* Section layout */
+.deal {
+  max-width: 1140px;
+  margin: 100px auto;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+/* Header text center */
+.deal-des {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.deal-des h3 {
+  font-size: 2rem;
+}
+
+.deal-des p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Grid layout for deals */
+.deal-discount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Left side grid: 2 rows */
+.left-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.bloom, .ana, .zabo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 20px;
+  color:  white;
+  height: 250px;
+}
+
+/* Background images */
+.bloom {    
+  background-image: url('../image/deal-bloom.png'); 
+}
+.ana {
+  background-image: url('../image/deal-ana.png');
+}
+.zabo {
+  background-image: url('../image/deal-zabo.png');
+  height: calc(250px * 2 + 20px); /* Height of bloom + ana + gap */
+}
+.text-box h3{
+  background: rgba(82, 77, 77, 0.4); 
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.text-box{
+  margin-bottom:10px;
+  font-size: 22px;
+  background: rgba(82, 77, 77, 0.4);
+}
+
+.text-box a {
+  display:flex;
+  padding: 6px 12px;
+  color: #76c6e3;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: 5px;
+  background: rgba(82, 77, 77, 0.4);
+}
+.text-box a:hover {
+  background: #e3e3e0;
+} 
+
+
 /* Responsive */
 @media screen and (max-width: 576px) {
     .nav-right ul li {
@@ -138,5 +313,36 @@
        flex-direction: column-reverse; 
        gap: 20px;
        padding: 0px;
+    }
+    .plant-image{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap:10px;
+       padding: 10px;
+    }
+    .ch-img2{
+        display:none;
+    }
+    .challenge,
+    .ch-img1{
+        flex-direction:column;
+        gap: 20px;
+        padding: 20px;
+    }
+    /* .left-column{
+        padding-bottom: 10px;
+    } */
+    .deal-discount{
+         grid-template-columns: 1fr;
+    }
+    .left-column{
+       grid-template-rows: auto;
+    }
+
+       .bloom,
+        .ana,
+        .zabo{
+        width: 100%;
+        height:250px;      
     }
 }
